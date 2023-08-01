@@ -15,13 +15,11 @@ export class userController{
 
     constructor(private readonly userService:userServices,
         private jwtService: JwtService,private redisCacheService:RedisCacheService){}
-
-
-
-
-
     @Get('hello-grpc')
     async helloGrpc(@Body() body:any){
+    console.log("jfkurhfw");
+    console.log("jfkurhfw");
+
         return this.userService.helloGrpc(body);
     }
 
