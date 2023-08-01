@@ -11,8 +11,8 @@ export const sequelizeConfig = [
         dialect: 'mysql',
         host: 'localhost',
         port: 3306,
-        username: 'root',
-        password: 'admin123',
+        username: 'naman',
+        password: 'admin@123',
         database: 'antech',
       });
       sequelize.addModels([User,Category,Product]);

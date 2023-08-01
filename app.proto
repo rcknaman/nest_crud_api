@@ -1,0 +1,19 @@
+syntax = "proto3";
+package app;
+
+service grpcService{
+
+
+    rpc helloGrpc(nullVal) returns (user);
+}
+
+message user{
+    string name =1;
+    string mobile=2;
+    string email = 3;
+    string role=4;
+    string password = 5;
+}
+message nullVal{
+    string name =1;
+}
